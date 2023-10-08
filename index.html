@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laravel blog with Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Open Sans', sans-serif;">
+    <section class="px-6 py-3">
+        <nav class="md:flex md:justify-between md:items-center">
+         <div class="">
+          <a href="#" class="">
+            <img src="/images/logo-white.svg" width="165" height="16" alt="">
+          </a>
+         </div>
+         <div class="">
+          <a href="#" class="text-xs text-black font-bold">Home Page</a>
+          <a href="#" class="bg-blue-500 ml-3 rounded-full 
+          uppercase py-3 px-5
+          font-semibold text-xs text-white">Subscribe for Updates </a>
+         </div>
+        </nav>
+        <header class="text-center mx-auto max-w-4xl mt-20">
+            <div class="max-w-xl mx-auto">
+                <h1 class="text-4xl">
+                    Latest <span class="text-blue-500">Laravel From Scratch</span> News
+                </h1>
+                <h2 class="inline-flex mt-2">
+                    By Lary Laracon
+<!--                    <img src="images/lary-laracon.svg" alt="head of the lary laracon">-->
+                </h2>
+                <p class="text-sm mt-14">
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Deleniti officia perfer
+                    endis soluta? Ab aliquid, doloremque magnam
+                    perspiciatis porro repudiandae voluptates.
+                </p>
+                <div class="md:flex md:justify-center mt-8 md:space-y-0 space-y-2">
+                    <!--                    Category -->
+                    <span class="relative mx-3 bg-gray-100 flex md:inline-flex items-center rounded-xl">
+                        <select class="appearance-none flex-1 bg-transparent py-2 px-6 pl-3 pr-9 text-sm font-semibold">
+                            <option value="category" disabled selected>Category</option>
+                            <option value="personal">Personal</option>
+                            <option value="business">Business</option>
+                        </select>
+                        <!-- <?xml version="1.0" encoding="UTF-8" standalone="no"?> -->
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="absolute pointer-events-none"
+                             style="right: 12px;"
+                             width="16px" height="16px" viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <title>arrow_down [#338]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs>
+
+                        </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-220.000000, -6684.000000)" fill="#000000">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path d="M164.292308,6524.36583 L164.292308,6524.36583 C163.902564,6524.77071 163.902564,6525.42619 164.292308,6525.83004 L172.555873,6534.39267 C173.33636,6535.20244 174.602528,6535.20244 175.383014,6534.39267 L183.70754,6525.76791 C184.093286,6525.36716 184.098283,6524.71997 183.717533,6524.31405 C183.328789,6523.89985 182.68821,6523.89467 182.29347,6524.30266 L174.676479,6532.19636 C174.285736,6532.60124 173.653152,6532.60124 173.262409,6532.19636 L165.705379,6524.36583 C165.315635,6523.96094 164.683051,6523.96094 164.292308,6524.36583" id="arrow_down-[#338]">
+
+                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <!--                    Category -->
+                    <!--                    Other Filter-->
+                    <span class="relative mx-3 bg-gray-100 flex md:inline-flex items-center rounded-xl">
+                        <select class="appearance-none flex-1 bg-transparent py-2 px-6 pl-3 pr-9 text-sm font-semibold">
+                            <option value="category" disabled selected>Other Filter</option>
+                            <option value="personal">Personal</option>
+                            <option value="business">Business</option>
+                        </select>
+                        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="absolute pointer-events-none"
+                             style="right: 12px;"
+                             width="16px" height="16px" viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <title>arrow_down [#338]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs>
+
+                        </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-220.000000, -6684.000000)" fill="#000000">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path d="M164.292308,6524.36583 L164.292308,6524.36583 C163.902564,6524.77071 163.902564,6525.42619 164.292308,6525.83004 L172.555873,6534.39267 C173.33636,6535.20244 174.602528,6535.20244 175.383014,6534.39267 L183.70754,6525.76791 C184.093286,6525.36716 184.098283,6524.71997 183.717533,6524.31405 C183.328789,6523.89985 182.68821,6523.89467 182.29347,6524.30266 L174.676479,6532.19636 C174.285736,6532.60124 173.653152,6532.60124 173.262409,6532.19636 L165.705379,6524.36583 C165.315635,6523.96094 164.683051,6523.96094 164.292308,6524.36583" id="arrow_down-[#338]">
+
+                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <!--                    Other Filter-->
+                    <span class="relative mx-3 bg-gray-100 flex md:inline-flex items-center rounded-xl px-3 py-2">
+                        <form action="#" method="get" class="">
+                            <input
+                                class=" bg-transparent placeholder-black font-semibold text-sm"
+                                type="text" name="search" placeholder="Find Something ...">
+                        </form>
+                    </span>
+                </div>
+            </div>
+        </header>
+        <main class="max-w-6xl mx-auto mt-6 lg:mt-10 space-y-6">
+            <article class="transition-colors duration-300 border border-black hover:border-opacity-5 border-opacity-0 hover:bg-gray-100 rounded-xl">
+                <div class="lg:flex py-6 px-5 ">
+                    <div class="flex-1 border mr-8">
+                        <img src="" alt="" class="rounded-xl">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between">
+                        <header class="">
+                            <div class="space-x-2">
+                                <a href="#"
+                                   style="font-size: 10px;"
+                                   class="font-semibold px-3 py-1 border border-blue-300 rounded-full text-blue-300 text-xs uppercase">Techniques</a>
+                                <a href="#"
+                                   style="font-size: 10px;"
+                                   class="font-semibold px-3 py-1 border border-red-300 rounded-full text-red-300 text-xs uppercase">Updates</a>
+
+                            </div>
+                            <div class="mt-4">
+                                <h1 class="text-3xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolorem, ea itaque nam perspiciatis sed!</h1>
+                                <span class="mt-2 block text-gray-400 text-xs">
+                                    Published <time>1 day ago</time>
+                                </span>
+                            </div>
+                        </header>
+                        <div class="text-sm mt-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor, laboriosam maxime omnis repellat sed suscipit veniam! A autem ea inventore praesentium quae? Magnam, pariatur.</p>
+                            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor.</p>
+                        </div>
+                        <footer class="flex justify-between mt-8">
+                            <div class="flex items-center text-sm">
+                                <img src="images/lary-avatar.svg" alt="">
+                                <div class="ml-3">
+                                    <h5 class="font-bold">Lary Laracore</h5>
+                                    <h6>Mascot at Laracasts</h6>
+                                </div>
+                            </div>
+                            <div class="hidden lg:block">
+                                <a href="#" class="text-xs font-semibold bg-gray-300 rounded-full py-2 px-6">Read More</a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </article>
+            <div class="lg:grid lg:grid-cols-2">
+                <article class="transition-colors duration-300 border border-black hover:border-opacity-5 border-opacity-0 hover:bg-gray-100 rounded-xl">
+                    <div class="py-6 px-5">
+                        <div class="border">
+                            <img src="" alt="" class="rounded-xl">
+                        </div>
+                        <div class="mt-8 flex flex-col justify-between">
+                            <header>
+                                <div class="space-x-2">
+                                    <a href="#"
+                                       style="font-size: 10px;"
+                                       class="font-semibold px-3 py-1 border border-blue-300 rounded-full text-blue-300 text-xs uppercase">Techniques</a>
+                                    <a href="#"
+                                       style="font-size: 10px;"
+                                       class="font-semibold px-3 py-1 border border-red-300 rounded-full text-red-300 text-xs uppercase">Techniques</a>
+    
+                                </div>
+                                <div class="mt-4">
+                                    <h1 class="text-3xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolorem, ea itaque nam perspiciatis sed!</h1>
+                                    <span class="mt-2 block text-gray-400 text-xs">
+                                        Published <time>1 day ago</time>
+                                    </span>
+                                </div>
+                            </header>
+                            <div class="text-sm mt-6">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor, laboriosam maxime omnis repellat sed suscipit veniam! A autem ea inventore praesentium quae? Magnam, pariatur.</p>
+                                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor.</p>
+                            </div>
+                            <footer class="flex justify-between mt-8">
+                                <div class="flex items-center text-sm">
+                                    <img src="images/lary-avatar.svg" alt="">
+                                    <div class="ml-3">
+                                        <h5 class="font-bold">Lary Laracore</h5>
+                                        <h6>Mascot at Laracasts</h6>
+                                    </div>
+                                </div>
+                                <div class="hidden lg:block">
+                                    <a href="#" class="text-xs font-semibold bg-gray-300 rounded-full py-2 px-6">Read More</a>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </article>
+                <article class="transition-colors duration-300 border border-black hover:border-opacity-5 border-opacity-0 hover:bg-gray-100 rounded-xl">
+                    <div class="py-6 px-5">
+                        <div class="border">
+                            <img src="" alt="" class="rounded-xl">
+                        </div>
+                        <div class="mt-8 flex flex-col justify-between">
+                            <header>
+                                <div class="space-x-2">
+                                    <a href="#"
+                                       style="font-size: 10px;"
+                                       class="font-semibold px-3 py-1 border border-blue-300 rounded-full text-blue-300 text-xs uppercase">Techniques</a>
+                                    <a href="#"
+                                       style="font-size: 10px;"
+                                       class="font-semibold px-3 py-1 border border-red-300 rounded-full text-red-300 text-xs uppercase">Techniques</a>
+    
+                                </div>
+                                <div class="mt-4">
+                                    <h1 class="text-3xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolorem, ea itaque nam perspiciatis sed!</h1>
+                                    <span class="mt-2 block text-gray-400 text-xs">
+                                        Published <time>1 day ago</time>
+                                    </span>
+                                </div>
+                            </header>
+                            <div class="text-sm mt-6">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor, laboriosam maxime omnis repellat sed suscipit veniam! A autem ea inventore praesentium quae? Magnam, pariatur.</p>
+                                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor.</p>
+                            </div>
+                            <footer class="flex justify-between mt-8">
+                                <div class="flex items-center text-sm">
+                                    <img src="images/lary-avatar.svg" alt="">
+                                    <div class="ml-3">
+                                        <h5 class="font-bold">Lary Laracore</h5>
+                                        <h6>Mascot at Laracasts</h6>
+                                    </div>
+                                </div>
+                                <div class="hidden lg:block">
+                                    <a href="#" class="text-xs font-semibold bg-gray-300 rounded-full py-2 px-6">Read More</a>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="lg:grid lg:grid-cols-3">
+                <article class="transition-colors duration-300 border border-black hover:border-opacity-5 border-opacity-0 hover:bg-gray-100 rounded-xl">
+                    <div class="py-6 px-5">
+                        <div class="border">
+                            <img src="" alt="" class="rounded-xl">
+                        </div>
+                        <div class="mt-8 flex flex-col justify-between">
+                            <header>
+                                <div class="space-x-2">
+                                    <a href="#"
+                                       style="font-size: 10px;"
+                                       class="font-semibold px-3 py-1 border border-blue-300 rounded-full text-blue-300 text-xs uppercase">Techniques</a>
+                                    <a href="#"
+                                       style="font-size: 10px;"
+                                       class="font-semibold px-3 py-1 border border-red-300 rounded-full text-red-300 text-xs uppercase">Techniques</a>
+    
+                                </div>
+                                <div class="mt-4">
+                                    <h1 class="text-3xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolorem, ea itaque nam perspiciatis sed!</h1>
+                                    <span class="mt-2 block text-gray-400 text-xs">
+                                        Published <time>1 day ago</time>
+                                    </span>
+                                </div>
+                            </header>
+                            <div class="text-sm mt-6">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor, laboriosam maxime omnis repellat sed suscipit veniam! A autem ea inventore praesentium quae? Magnam, pariatur.</p>
+                                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor.</p>
+                            </div>
+                            <footer class="flex justify-between mt-8">
+                                <div class="flex items-center text-sm">
+                                    <img src="images/lary-avatar.svg" alt="">
+                                    <div class="ml-3">
+                                        <h5 class="font-bold">Lary Laracore</h5>
+                                        <h6>Mascot at Laracasts</h6>
+                                    </div>
+                                </div>
+                                <div class="hidden lg:block">
+                                    <a href="#" class="text-xs font-semibold bg-gray-300 rounded-full py-2 px-6">Read More</a>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </article>
+                <article class="transition-colors duration-300 border border-black hover:border-opacity-5 border-opacity-0 hover:bg-gray-100 rounded-xl">
+                    <div class="py-6 px-5">
+                        <div class="border">
+                            <img src="" alt="" class="rounded-xl">
+                        </div>
+                        <div class="mt-8 flex flex-col justify-between">
+                            <header>
+                                <div class="space-x-2">
+                                    <a href="#"
+                                       style="font-size: 10px;"
+                                       class="font-semibold px-3 py-1 border border-blue-300 rounded-full text-blue-300 text-xs uppercase">Techniques</a>
+                                    <a href="#"
+                                       style="font-size: 10px;"
+                                       class="font-semibold px-3 py-1 border border-red-300 rounded-full text-red-300 text-xs uppercase">Techniques</a>
+    
+                                </div>
+                                <div class="mt-4">
+                                    <h1 class="text-3xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolorem, ea itaque nam perspiciatis sed!</h1>
+                                    <span class="mt-2 block text-gray-400 text-xs">
+                                        Published <time>1 day ago</time>
+                                    </span>
+                                </div>
+                            </header>
+                            <div class="text-sm mt-6">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor, laboriosam maxime omnis repellat sed suscipit veniam! A autem ea inventore praesentium quae? Magnam, pariatur.</p>
+                                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor.</p>
+                            </div>
+                            <footer class="flex justify-between mt-8">
+                                <div class="flex items-center text-sm">
+                                    <img src="images/lary-avatar.svg" alt="">
+                                    <div class="ml-3">
+                                        <h5 class="font-bold">Lary Laracore</h5>
+                                        <h6>Mascot at Laracasts</h6>
+                                    </div>
+                                </div>
+                                <div class="hidden lg:block">
+                                    <a href="#" class="text-xs font-semibold bg-gray-300 rounded-full py-2 px-6">Read More</a>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </article>
+                <article class="transition-colors duration-300 border border-black hover:border-opacity-5 border-opacity-0 hover:bg-gray-100 rounded-xl">
+                    <div class="py-6 px-5">
+                        <div class="border">
+                            <img src="" alt="" class="rounded-xl">
+                        </div>
+                        <div class="mt-8 flex flex-col justify-between">
+                            <header>
+                                <div class="space-x-2">
+                                    <a href="#"
+                                       style="font-size: 10px;"
+                                       class="font-semibold px-3 py-1 border border-blue-300 rounded-full text-blue-300 text-xs uppercase">Techniques</a>
+                                    <a href="#"
+                                       style="font-size: 10px;"
+                                       class="font-semibold px-3 py-1 border border-red-300 rounded-full text-red-300 text-xs uppercase">Techniques</a>
+    
+                                </div>
+                                <div class="mt-4">
+                                    <h1 class="text-3xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolorem, ea itaque nam perspiciatis sed!</h1>
+                                    <span class="mt-2 block text-gray-400 text-xs">
+                                        Published <time>1 day ago</time>
+                                    </span>
+                                </div>
+                            </header>
+                            <div class="text-sm mt-6">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor, laboriosam maxime omnis repellat sed suscipit veniam! A autem ea inventore praesentium quae? Magnam, pariatur.</p>
+                                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor.</p>
+                            </div>
+                            <footer class="flex justify-between mt-8">
+                                <div class="flex items-center text-sm">
+                                    <img src="images/lary-avatar.svg" alt="">
+                                    <div class="ml-3">
+                                        <h5 class="font-bold">Lary Laracore</h5>
+                                        <h6>Mascot at Laracasts</h6>
+                                    </div>
+                                </div>
+                                <div class="hidden lg:block">
+                                    <a href="#" class="text-xs font-semibold bg-gray-300 rounded-full py-2 px-6">Read More</a>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <footer class="mt-16 text-center py-16 px-15 bg-gray-100 transition-colors duration-300 border border-black hover:border-opacity-5 border-opacity-0 hover:bg-gray-100 rounded-xl">
+            <img src="" class="mx-auto" style="width: 145px;" alt="">
+            <h5 class="text-3xl">Stay in touch with the latest posts</h5>
+            <p class="text-sm">Promise to keep the inbox clean. No bugs.</p>
+            <div class="mt-10">
+                <div class="rounded-full max-w-xs mx-auto flex lg:bg-gray-200">
+                    <form action="#" method="post" 
+                    class="lg:flex text-sm">
+                    <div class="py-3 px-5 inline-flex items-center">
+                        <label for="email">
+                            <img src="" class="" alt="">
+                        </label>
+                        <input type="text" 
+                        class="focus-within:outline-none pl-4 bg-transparent" placeholder="Your email address..">
+                    </div>
+                        <button class="hover:bg-blue-600 bg-blue-500 ml-3 
+                        rounded-full font-semibold text-white uppercase py-3 px-8
+                        text-xs">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laravel blog with Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="font-family: 'Open Sans', sans-serif">
+    <section class="px-6 py-3">
+      <nav class="md:flex md:justify-between md:items-center">
+        <div class="">
+          <a href="#" class="">
+            <img src="/images/logo-white.svg" width="165" height="16" alt="" />
+          </a>
+        </div>
+        <div class="">
+          <a href="#" class="text-xs text-black font-bold">Home Page</a>
+          <a
+            href="#"
+            class="transition-colors duration-300 hover:bg-blue-700 bg-blue-500 ml-3 rounded-full uppercase py-3 px-5 font-semibold text-xs text-white"
+            >Subscribe for Updates
+          </a>
+        </div>
+      </nav>
+      <main class="max-w-6xl mx-auto mt-6 lg:mt-10 space-y-6">
+        <article class="pt-10 lg:grid lg:grid-cols-12 gap-x-10">
+          <div class="col-span-4 text-center">
+            <img src="images/" alt="" class="border border-gray-100 rounded-xl" style="max-width: 300px;height: 200px;" />
+            <span class="mt-4 block text-gray-400 text-xs">
+              Published <time>1 day ago</time>
+            </span>
+            <div class="mt-4 flex items-center justify-center text-sm">
+              <img src="images/lary-avatar.svg" alt="" />
+              <div class="ml-3 text-left">
+                <h5 class="font-bold">Lary Laracore</h5>
+                <h6>Mascot at Laracasts</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-8">
+            <div class="-mt-10 flex justify-between items-center mb-6">
+                <a href="#" class="text-lg hover:text-blue-500">
+                    <img class="inline-block text-center mr-4 hover:text-blue-500" style="width: 25px;" src="images/arrow-sm-left-svgrepo-com.svg" alt="">
+                    Back to Posts
+                </a>
+                <div class="space-x-2">
+                    <a href="#"
+                       style="font-size: 10px;"
+                       class="font-semibold px-3 py-1 border border-blue-300 rounded-full text-blue-300 text-xs uppercase">Techniques</a>
+                    <a href="#"
+                       style="font-size: 10px;"
+                       class="font-semibold px-3 py-1 border border-red-300 rounded-full text-red-300 text-xs uppercase">Updates</a>
+
+                </div>
+            </div>
+            <h1 class="font-bold text-5xl mb-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+              recusandae.
+            </h1>
+            <div class="space-y-6">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos, illo? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Vero labore quidem aliquid iste dolorem
+                impedit ullam! Eaque pariatur magni vel?
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis qui doloremque unde eaque voluptates. Quo reiciendis
+                dignissimos ea voluptates iusto necessitatibus possimus labore
+                distinctio velit. Magni assumenda quaerat harum.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti deserunt cumque, blanditiis, atque facilis fugiat,
+                voluptatibus aspernatur unde eum id itaque? Rem ipsam quo omnis
+                repudiandae fugit dolore vel assumenda.
+              </p>
+              <h1 class="font-bold text-xl">
+                Lorem, ipsum dolor adipisicing elit.
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                aut eum consequuntur laudantium harum vero, perspiciatis
+                consectetur delectus odit asperiores sapiente officiis debitis
+                quisquam, aspernatur, quia totam nihil quaerat?
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis qui doloremque unde eaque voluptates. Quo reiciendis
+                dignissimos ea voluptates iusto necessitatibus possimus labore
+                distinctio velit. Magni assumenda quaerat harum.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis temporibus, impedit harum, neque assumenda tempora sunt
+                doloribus eius numquam explicabo aut, est id quod accusantium
+                mollitia suscipit odit modi error.
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repellendus, sint? Id voluptatem hic, repellat qui amet
+                consequuntur quo officia delectus aliquam, in laborum, sint
+                illum!
+              </p>
+            </div>
+          </div>
+        </article>
+      </main>
+      <footer
+        class="mt-16 text-center py-16 px-15 bg-gray-100 transition-colors duration-300 border border-black hover:border-opacity-5 border-opacity-0 hover:bg-gray-100 rounded-xl"
+      >
+        <img src="" class="mx-auto" style="width: 145px" alt="" />
+        <h5 class="text-3xl">Stay in touch with the latest posts</h5>
+        <p class="text-sm">Promise to keep the inbox clean. No bugs.</p>
+        <div class="mt-10">
+          <div class="rounded-full max-w-xs mx-auto flex lg:bg-gray-200">
+            <form action="#" method="post" class="lg:flex text-sm">
+              <div class="py-3 px-5 inline-flex items-center">
+                <label for="email">
+                  <img src="" class="" alt="" />
+                </label>
+                <input
+                  type="text"
+                  class="focus-within:outline-none pl-4 bg-transparent"
+                  placeholder="Your email address.."
+                />
+              </div>
+              <button
+                class="hover:bg-blue-600 bg-blue-500 ml-3 rounded-full font-semibold text-white uppercase py-3 px-8 text-xs"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
